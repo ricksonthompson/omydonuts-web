@@ -1,29 +1,28 @@
-import { Container, Header, Typograph, CardList } from "./styles";
-import { HiOutlineMenuAlt4, HiOutlineLocationMarker } from 'react-icons/hi'
-import { MdOutlineExpandMore } from 'react-icons/md'
-import { Card } from "../../components/Card";
+import { Link } from "react-router-dom";
+import { Container, Content } from "./styles";
 
 export function Home() {
   return (
     <>
       <Container>
-        <Header>
-          <HiOutlineMenuAlt4 />
+        <Content>
           <div>
-            <HiOutlineLocationMarker color="#EB558F" />
-            <p>Manaus, Am</p>
-            <MdOutlineExpandMore color="##e76c9b"/>
+            <img src={require("../../assets/logo-donut-colorful.png" )} alt="avatar"/>
           </div>
-          <img src={require("../../assets/profile.jpeg" )}
-          alt="avatar"
-          />
-        </Header>
-          <Typograph>Encomendas<br/> disponíveis!</Typograph>
-          <input type="search" value="Encontre um sabor" />
-        <CardList>
-          <Card />
-          <Card />
-        </CardList>
+
+          <div>
+            <h1>Bem-vindo(a) <br/> à Ó My Donuts!</h1>
+            <p>Nós temos muitas escolhas para você. Vamos prosseguir e conhecer um pouco mais!</p>
+          </div>
+          
+          <div>
+            <button>
+              <Link to="/donuts">
+                Prosseguir
+              </Link>
+            </button>
+          </div>
+        </Content>  
       </Container>
     </>
   )

@@ -1,72 +1,68 @@
-import styled from "styled-components";
-const img = require('../../assets/post1.jpg')
+import styled from 'styled-components';
+const img = require('../../assets/omd-donut-ninho.jpg')
 
 export const Container = styled.div`
-  img {
-    width: 100px;
-    height: auto;
-  }
-
+  background-color: #E80B8C;
   height: 100vh;
   display: flex;
   flex-direction: column;
-`
-export const Header = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  width: 95%;
-  align-self: center;
+  padding: 20px;
 
-  img {
-    width: 100px;
-    height: auto;
+  h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    width: 80%;
   }
-`
+`;
+
+export const Card = styled.div`
+  background-color: #fff;
+  height: max-content;
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  align-self: center;
+  -webkit-box-shadow: 9px 6px 12px 4px rgba(87,87,85,0.45); 
+  box-shadow: 9px 6px 12px 4px rgba(87,87,85,0.45);
+`;
 
 export const Banner = styled.div`
-  display: flex;
   background-color: #E80B8C;
   background-image: url(${img});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  width: 95%;
-  height: 40%;
-  align-self: center;
-  border-radius: 25px;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    width: 50%;
-    height: auto;
-  }
-`
-export const TypeList = styled.div`
-  width: 95%;
-  height: max-content;
-  align-self: center;
-  align-items: center;
-  margin-top: 20px;
-  justify-content: flex-start;
-`
-
-export const Type = styled.div`
-  width: max-content;
-  padding: 10px;
-  background-color: #FFF7BD;
-  border-radius: 20px;
-  color: #F8D536;
-  font-weight: bold;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
 `
 
 export const Description = styled.div`
-  width: 95%;
-  align-self: center;
-  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
+export const Ingredients = styled.div`
+  margin-left: 20px;
+
+  p {
+    color: #9E9E9B;
+  }
+`
+
+export const Tags = styled.div`
+  display: flex;
+  margin-left: 20px;
+`
+
+export const Tag = styled.button`
+  background-color: transparent;
+  border: 2px solid #F8D536;
+  border-radius: 25px;
+  padding: 5px;
+  color: #F8D536;
+  margin-right: 5px;
 `
 
 export const Footer = styled.footer`
@@ -74,70 +70,28 @@ export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   right: 0;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
   justify-content:  center;
   align-items: center;
-  height: 30vh;
+  height: max-content;
   margin-top: auto;
+  padding: 20px;
 
-  button {
-    background-color: #35464D;
-    border: 0;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
+  p {
+    color: rgba(0,0,0,.7); 
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
   }
 `
- 
-export const Actions = styled.div`
+
+export const SocialNetworks = styled.div`
+  height: 100px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 90%;
   margin-bottom: 20px;
-` 
-export const Add = styled.div`
+`
+
+export const Links = styled.div`
   display: flex;
-  align-items: center;
-  width: 25%;
   justify-content: space-between;
-` 
-export const ButtonAdd = styled.div`
-  background-color: white;
-  border: 0;
-  border-radius: 100px;
   padding: 10px;
-  color: white;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #07B7AD;
-  -webkit-box-shadow: 19px 18px 25px -10px #8F8F8F; 
-  box-shadow: 19px 18px 25px -10px #8F8F8F;
-`
-
-export const AddToCart = styled.div`
-  display: flex;
-  align-items: center;
-` 
-
-export const ButtonAddToCart = styled.div`
-  background-color: #07B7AD;
-  border: 0;
-  border-radius: 100px;
-  padding: 10px;
-  color: white;
-  height: 50px;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin-bottom: 25px;
-`
-
-export const Price = styled.div`
 `

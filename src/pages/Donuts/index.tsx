@@ -1,54 +1,44 @@
-import { 
-  Actions, 
-  Add, 
-  ButtonAdd, 
-  ButtonAddToCart, 
-  Container, 
-  Footer, 
-  Price, 
-  Banner, 
-  Description,
-  Header,
-  Type,
-  TypeList
-} from "./styles";
-import { MdOutlineArrowBack } from 'react-icons/md'
-const logo = require("../../assets/logo.png")
+import React from "react";
+import { Container, Card, Banner, Description, Ingredients, Tags, Tag, Footer, Links, SocialNetworks } from "./styles";
+import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs'
 
-
-export function Donuts() {
+export const Donuts: React.FC = () => {
   return (
     <>
       <Container>
-        <Header>
-          <MdOutlineArrowBack size={25}/>
-          <img src={logo} alt="Logo" />
-        </Header>
-        <Banner />
-        <TypeList>
-          <Type>
-            <p>Tradicional</p>
-          </Type>
-        </TypeList>
-        <Description>
-          <h1>Donut de Brigadeiro</h1>
-          <p>Recheios: Brigadeiro, cobertura e um toque de amor.</p>
-        </Description>
-        <Footer>
-          <Actions>
-            <Price>
-              <p>Preço</p>
-              <h1>R$ 39,99</h1>
-            </Price>
-            <Add>
-              <ButtonAdd>-</ButtonAdd>
-              <p>1</p>
-              <ButtonAdd>+</ButtonAdd>
-            </Add>
-          </Actions>
-          <ButtonAddToCart>Adicionar ao carrinho</ButtonAddToCart>
-        </Footer>
+        <h1>Nossos deliciosos sabores!</h1>
+        <Card>
+            <Banner />
+            <Description>
+              <Ingredients>
+                <h2>Ninho</h2>
+                <p>Chocolate branco e leite ninho.</p>
+              </Ingredients>
+              <Tags>
+                <Tag>C/S Recheio</Tag>
+                <Tag>Tam: M</Tag>
+              </Tags>
+            </Description>
+        </Card>
       </Container>
+      <Footer>
+        <SocialNetworks>
+          <h2>Nossas redes sociais!</h2>
+          <Links>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/omydonuts_/">
+              <BsInstagram size="30" color="#E80B8C"/>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/omydonuts">
+              <BsFacebook size="30" color="#E80B8C"/>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=5592999963038&text=Ol%C3%A1!!!%20Meu%20nome%20%C3%A9%20(digite%20seu%20nome).%20Ajude-me%20a%20encomendar%20meus%20donuts%F0%9F%8D%A9">
+              <BsWhatsapp size="30" color="#E80B8C"/>
+            </a>
+          </Links>
+        </SocialNetworks>
+        <p>© Copyright {new Date().getFullYear()} Ó My Donuts.<br />
+        Todos os direitos reservados.</p>
+      </Footer>
     </>
-  )
+  );
 }

@@ -1,63 +1,54 @@
 import styled from 'styled-components'
 
-export const Header = styled.header`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-
-  div {
-    display: flex;
-  }
-
-  p {
-    color: #35464D;
-    font-weight: bold;
-  }
-
-  h1 {
-    color: #000000;
-    margin-left: 50px;
-  }
-`
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-
-  input {
-    border-radius: 20px;
-    border: 0;
-    background-color: #F5F5F5;
-    padding: 10px;
-    align-self: center;
-    width: 80%;
-    height: 40px;
-    margin-top: 10px;
-  }
-
-  .title {
-    margin-left: 20px;
-  }
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 `
 
-export const Typograph = styled.h1`
-  color: #080808;
-  margin-left: 50px;
-`
-export const CardList = styled.div`
+export const Content = styled.div`
   display: flex;
-  width: 80%;
-  height: 100vh;
-  justify-content: space-between;
-  align-self: center;
-  margin-top: 20px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  div {
+    max-width: 80%;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  img {
+    width: 250px;
+    height: auto;
+  }
+
+  h1 {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  p {
+    padding-top: 10px;
+    text-align: center;
+    color: #9E9E9B;
+    align-self: center;
+    align-content: center;
+  }
+
+  button {
+    padding-top: 10px;
+    border: 1px solid #E80B8C;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+
+    a {
+      color: #E80B8C;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
 `
