@@ -25,6 +25,7 @@ export const Card = styled.div`
   align-self: center;
   -webkit-box-shadow: 9px 6px 12px 4px rgba(87,87,85,0.45); 
   box-shadow: 9px 6px 12px 4px rgba(87,87,85,0.45);
+  margin-bottom: 20px;
 `;
 
 export const Banner = styled.div`
@@ -63,35 +64,4 @@ export const Tag = styled.button`
   padding: 5px;
   color: #F8D536;
   margin-right: 5px;
-`
-
-export const Footer = styled.footer`
-  background-color: #F5F5F5;
-  display: flex;
-  flex-direction: column;
-  right: 0;
-  justify-content:  center;
-  align-items: center;
-  height: max-content;
-  margin-top: auto;
-  padding: 20px;
-
-  p {
-    color: rgba(0,0,0,.7); 
-    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
-  }
-`
-
-export const SocialNetworks = styled.div`
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 20px;
-`
-
-export const Links = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
 `

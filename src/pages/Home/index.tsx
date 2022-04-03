@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Footer } from "../../components/Footer";
 import { Container, Content } from "./styles";
 
 export function Home() {
@@ -24,6 +25,7 @@ export function Home() {
           </div>
         </Content>  
       </Container>
+      <Footer color="#F8D536"/>
     </>
   )
 }
