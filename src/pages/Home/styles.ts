@@ -45,7 +45,12 @@ export const Content = styled.div`
     border-radius: 5px;
     background-color: transparent;
     margin-bottom: 30px;
+    transition: filter 0.2s;
 
+    &:hover {
+      filter: brightness(0.9);
+    }
+    
     a {
       color: #E80B8C;
       text-decoration: none;

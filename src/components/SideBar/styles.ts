@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface ContainerProps {
   isActive: boolean
+  logoIsVisible?: boolean
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -17,7 +18,8 @@ export const Container = styled.div<ContainerProps>`
     img {
       width: 50px;
       height: auto;
-      margin-right:20px ;
+      margin-right:20px;
+      ${props => props.logoIsVisible === false ? "visibility: hidden;" : ""}
     }
   }
 
@@ -37,6 +39,9 @@ export const Container = styled.div<ContainerProps>`
     position: fixed;
     top: 0;
     transition: 850ms;
+    z-index: 1;
+    -webkit-box-shadow: 11px 0px 13px -7px rgba(87,87,85,0.3); 
+box-shadow: 11px 0px 13px -7px rgba(87,87,85,0.3);
     ${(props) => props.isActive === false ? "left: -100%;" : ""}
   }
 
