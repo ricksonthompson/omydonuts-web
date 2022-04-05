@@ -7,20 +7,26 @@ import { SidebarData } from "./SidebarData";
 import { Container } from "./styles";
 const img = require('../../assets/logo-donut-colorful.png')
 
-export const SideBar: React.FC = () => {
+interface SidebarProps { 
+  logoIsActive?: boolean
+}
+
+export const SideBar: React.FC<SidebarProps> = ({children, logoIsActive}) => {
   const [sideBar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sideBar);
 
   return (
     <>
-      <Container isActive={sideBar}>
+      <Container isActive={sideBar} logoIsVisible={logoIsActive}>
         <IconContext.Provider value={{ color: "#E80B8C", size: "30"}}>
           <div className="navbar">
             <Link to="#"  className="menu-bars">
               <RiIcons.RiMenu4Line onClick={showSidebar} size="30"/>
             </Link>
-            <img src={img} alt="logo" />
+            <Link to="/" >
+              <img src={img} alt="logo" />
+            </Link>
           </div>
           <nav className={sideBar ? "nav-menu active" : "nav-menu"}>
             <ul className="nav-menu items">

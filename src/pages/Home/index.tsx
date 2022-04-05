@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { Footer } from "../../components/Footer";
+import { SideBar } from "../../components/SideBar";
 import { Container, Content } from "./styles";
 
 export function Home() {
   return (
     <>
+      <SideBar logoIsActive={false}/>
       <Container>
         <Content>
           <div>

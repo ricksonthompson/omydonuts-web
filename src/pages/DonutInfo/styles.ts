@@ -10,14 +10,33 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  width: 95%;
+  width: 100%;
+  padding: 10px 20px;
   align-self: center;
 
   img {
-    width: 100px;
+    width: 50px;
     height: auto;
   }
+
+  button {
+    border: none;
+    background-color: transparent;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+`
+
+export const Content = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
 `
 
 export const Banner = styled.div`
@@ -52,16 +71,21 @@ export const TypeList = styled.div`
 export const Type = styled.div`
   width: max-content;
   padding: 10px;
-  background-color: #FFF7BD;
+  background-color: #07B7AD;
+  opacity: 0.5;
   border-radius: 20px;
-  color: #F8D536;
+  color: #FFF;
   font-weight: bold;
 `
 
 export const Description = styled.div`
   width: 95%;
   align-self: center;
-  margin-top: 15px;
+  margin-top: 10px;
+
+  p {
+    color: #35464D;
+  }
 `
 
 export const Footer = styled.footer`
@@ -83,56 +107,4 @@ export const Footer = styled.footer`
     padding: 10px;
     color: white;
   }
-`
- 
-export const Actions = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin-bottom: 20px;
-` 
-export const Add = styled.div`
-  display: flex;
-  align-items: center;
-  width: 25%;
-  justify-content: space-between;
-` 
-export const ButtonAdd = styled.div`
-  background-color: white;
-  border: 0;
-  border-radius: 100px;
-  padding: 10px;
-  color: white;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #07B7AD;
-  -webkit-box-shadow: 19px 18px 25px -10px #8F8F8F; 
-  box-shadow: 19px 18px 25px -10px #8F8F8F;
-`
-
-export const AddToCart = styled.div`
-  display: flex;
-  align-items: center;
-` 
-
-export const ButtonAddToCart = styled.div`
-  background-color: #07B7AD;
-  border: 0;
-  border-radius: 100px;
-  padding: 10px;
-  color: white;
-  height: 50px;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin-bottom: 25px;
-`
-
-export const Price = styled.div`
 `

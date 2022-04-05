@@ -3,7 +3,7 @@ const img = require('../../assets/omd-donut-ninho.jpg')
 
 export const Container = styled.div`
   background-color: #E80B8C;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -59,9 +59,9 @@ export const Tags = styled.div`
 
 export const Tag = styled.button`
   background-color: transparent;
-  border: 2px solid #F8D536;
+  border: 2px solid #07B7AD;
   border-radius: 25px;
   padding: 5px;
-  color: #F8D536;
+  color: #07B7AD;
   margin-right: 5px;
 `
