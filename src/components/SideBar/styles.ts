@@ -13,7 +13,8 @@ export const Container = styled.div<ContainerProps>`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #9E9E9B;
+    -webkit-box-shadow: 0px 4px 15px -3px #9E9E9B; 
+    box-shadow: 0px 4px 15px -3px #9E9E9B;
 
     img {
       width: 50px;
@@ -41,7 +42,7 @@ export const Container = styled.div<ContainerProps>`
     transition: 850ms;
     z-index: 1;
     -webkit-box-shadow: 11px 0px 13px -7px rgba(87,87,85,0.3); 
-box-shadow: 11px 0px 13px -7px rgba(87,87,85,0.3);
+    box-shadow: 11px 0px 13px -7px rgba(87,87,85,0.3);
     ${(props) => props.isActive === false ? "left: -100%;" : ""}
   }
 
